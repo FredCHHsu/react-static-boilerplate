@@ -1,11 +1,16 @@
 {
   "extends": "airbnb",
   "env": {
-    "mocha": true
+    "mocha": true,
+  },
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "ecmaFeatures": {
+      "experimentalObjectRestSpread": true
+    }
   },
   "rules": {
     "no-console": ["warn", { allow: ["warn", "error"] }],
     "no-unused-expressions": 0,
-    "padded-blocks": 0
   }
 }
