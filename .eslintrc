@@ -1,9 +1,10 @@
 {
+  "extends": "airbnb",
   "env": {
     "mocha": true
   },
   "rules": {
-    "no-console": 0,
+    "no-console": ["warn", { allow: ["warn", "error"] }],
     "no-unused-expressions": 0,
     "padded-blocks": 0
   }
